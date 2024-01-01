@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+:root {
+  --verde-claro: #87CEEB;
+  --verde-piscina: #86EBE7;
+  --roxo-suave: #86AEEB;
+  --verde-suave: #86EBC5;
+  --roxo: #868EEB;
+  --branco-puro: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: 100px;
+  background-color: var(--verde-suave);
+  border-radius: 50px;
+  margin: 2em 15em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+header>.container-logo {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  height: 100%;
+}
+
+header>.container-logo>a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+header>.container-logo>a>img {
+  object-fit: contain;
+  height: 70%;
+  width: 140px;
+}
+
+header>.container-logo>a>p {
+  height: 30%;
+  font-size: 14pt;
+  color: #373434;
+  font-weight: 700;
+}
+
+header>nav {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+header>nav>ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
+
+header>nav>ul>li {
+  text-decoration: none;
+  color: #373434;
+  font-size: 15pt;
+  font-weight: 700;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: fit-content;
+  margin: 2em 15em;
+}
+
+section.section-form {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+section.section-form>h1 {
+  font-size: 30pt;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: 300px;
+  background-color: var(--verde-suave);
+  border-radius: 50px;
+  margin: 2em 15em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form>.buttons {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.form>.buttons>.back-btn {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  min-width: 150px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15pt;
+  background-color: red;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.form>.form-control {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  gap: 5px;
+}
+
+.form-control>input[type=text] {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  min-width: 500px;
+  height: fit-content;
+  font-size: 15pt;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 1em;
+}
+
+.form-control>label {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  font-size: 20pt;
+  text-transform: uppercase;
+}
+
+.form-checkbox {
+  position: relative;
+  display: flex;
+  flex-direction: row !important;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  gap: 15px !important;
+}
+
+.form-checkbox>input[type=checkbox] {
+  position: relative;
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+
+.form-checkbox>label {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.form>.buttons>.submit-button {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  min-width: 150px;
+  height: fit-content;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15pt;
+  background-color: #28a745;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.form>.buttons>.submit-button:hover {
+  opacity: .5;
+}
+
+.section-users {
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.section-users>h1 {
+  font-size: 30pt;
+  width: 100%;
+}
+
+.section-users>.item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2em;
+  flex: 1 1 29%;
+  max-width: 33%;
+  border-radius: 50px;
+  min-height: 200px;
+}
+
+.section-users>.item>h2 {
+  font-size: 20pt;
+}
+
+.section-users>.item>p {
+  font-size: 10pt;
+}
+
+.section-users>.item>.actions {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  margin: 1em 0;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-users>.item>.actions>a {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 1em 2em;
+  text-align: center;
+  font-size: 12pt;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.details-btn {}
+
+.edit-btn {
+  background-color: rgb(220, 220, 95) !important;
+  color: #fff;
+}
+
+.section-users>.item>.actions>a:hover {
+  opacity: .5;
+}
+
+.section-users>.item>.actions>form {
+  text-align: center;
+  border: none;
+}
+
+.section-users>.item>.actions>form>.delete-button {
+  border: none;
+  padding: 1em 2em;
+  border-radius: 20px;
+  width: 100%;
+  color: #fff;
+  font-weight: 800;
+  background-color: rgb(227, 84, 84);
+  font-size: 12pt;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.section-users>.item>.actions>form>.delete-button:hover {
+  opacity: .5;
+}
+
+.section-user-view {
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.section-user-view>.user {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: #fff;
+  padding: 5em;
+  border-radius: 50px;
+}
+
+.section-user-view>.user>h1 {
+  font-size: 30pt;
+}
+
+.section-user-view>.user>p {
+  font-size: 15pt;
+}
+
+.section-user-view>.user>a {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 1em 2em;
+  margin: 20px 0 0 0;
+  text-align: center;
+  min-width: 200px;
+}
