@@ -247,18 +247,21 @@ footer {
   opacity: .5;
 }
 
-.section-users {
+.section-users,
+.section-user-addresses {
   gap: 20px;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.section-users>h1 {
+.section-users>h1,
+.section-user-addresses>h1 {
   font-size: 30pt;
   width: 100%;
 }
 
-.section-users>.item {
+.section-users>.item,
+.section-user-addresses>.item {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -271,15 +274,18 @@ footer {
   min-height: 200px;
 }
 
-.section-users>.item>h2 {
+.section-users>.item>h2,
+.section-user-addresses>.item>h2 {
   font-size: 20pt;
 }
 
-.section-users>.item>p {
+.section-users>.item>p,
+.section-user-addresses>.item>p {
   font-size: 10pt;
 }
 
-.section-users>.item>.actions {
+.section-users>.item>.actions,
+.section-user-addresses>.item>.actions {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -290,7 +296,8 @@ footer {
   gap: 10px;
 }
 
-.section-users>.item>.actions>a {
+.section-users>.item>.actions>a,
+.section-user-addresses>.item>.actions>a {
   background-color: whitesmoke;
   border-radius: 20px;
   padding: 1em 2em;
@@ -300,23 +307,24 @@ footer {
   letter-spacing: 1px;
 }
 
-.details-btn {}
-
 .edit-btn {
   background-color: rgb(220, 220, 95) !important;
   color: #fff;
 }
 
-.section-users>.item>.actions>a:hover {
+.section-users>.item>.actions>a:hover,
+.section-user-addresses>.item>.actions>a:hover {
   opacity: .5;
 }
 
-.section-users>.item>.actions>form {
+.section-users>.item>.actions>form,
+.section-user-addresses>.item>.actions>form {
   text-align: center;
   border: none;
 }
 
-.section-users>.item>.actions>form>.delete-button {
+.section-users>.item>.actions>form>.delete-button,
+.section-user-addresses>.item>.actions>form>.delete-button {
   border: none;
   padding: 1em 2em;
   border-radius: 20px;
@@ -329,7 +337,8 @@ footer {
   cursor: pointer;
 }
 
-.section-users>.item>.actions>form>.delete-button:hover {
+.section-users>.item>.actions>form>.delete-button:hover,
+.section-user-addresses>.item>.actions>form>.delete-button:hover {
   opacity: .5;
 }
 
